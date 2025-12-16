@@ -13,8 +13,8 @@
 
   <section class="hero">
     <h1>NFS2D</h1>
-    <p>
-      Juego multijugador con arquitectura cliente-servidor.
+    <p class="tagline">
+      Velocidad, estrategia y precisión técnica en una experiencia multijugador 2D de alto rendimiento.
     </p>
   </section>
 
@@ -26,56 +26,99 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
-    </section>
+  </section>
 
-    <section class="developers">
-    <h2>Desarrolladores</h2>
-
-    <div class="dev-list">
-
-        <div class="dev">
-        <span class="name">Ulises Valentín Tripaldi</span>
-        <a href="mailto:utripaldi@fi.uba.ar" title="Email">
-            <img src="icons/mail.svg" alt="Email">
-        </a>
-        <a href="https://github.com/utripaldi" target="_blank" title="GitHub">
-            <img src="icons/github.svg" alt="GitHub">
-        </a>
-        </div>
-
-        <div class="dev">
-        <span class="name">Máximo Augusto Calderón Vasil</span>
-        <a href="mailto:mcalderonv@fi.uba.ar">
-            <img src="icons/mail.svg" alt="Email">
-        </a>
-        <a href="https://github.com/maxivasil" target="_blank">
-            <img src="icons/github.svg" alt="GitHub">
-        </a>
-        </div>
-
-        <div class="dev">
-        <span class="name">Bautista Canepa</span>
-        <a href="mailto:devtres@email.com">
-            <img src="icons/mail.svg" alt="Email">
-        </a>
-        <a href="https://github.com/ManteCvK" target="_blank">
-            <img src="icons/github.svg" alt="GitHub">
-        </a>
-        </div>
-
-        <div class="dev">
-        <span class="name">Maximo Giovanettoni</span>
-        <a href="mailto:mgiovanettoni@fi.uba.ar">
-            <img src="icons/mail.svg" alt="Email">
-        </a>
-        <a href="https://github.com/maximogiovanettoni" target="_blank">
-            <img src="icons/github.svg" alt="GitHub">
-        </a>
-        </div>
-
+  <section class="features">
+    <h2>Características del Juego</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Multijugador Real-Time</h3>
+        <p>Compite en salas privadas (Lobbies) mediante un sistema dinámico de gestión de sesiones.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Simulación Física</h3>
+        <p>Conducción realista gracias a la integración del motor Box2D para colisiones y sensores.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Editor de Circuitos</h3>
+        <p>Herramienta integrada para diseñar pistas personalizadas exportables en formato YAML.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Progresión Táctica</h3>
+        <p>Mejora estadísticas de tu vehículo entre carreras con un sistema de penalización de tiempo.</p>
+      </div>
     </div>
-    </section>
+  </section>
 
+  <section class="tech-stack">
+    <h2>Ingeniería del Proyecto</h2>
+    <p class="tech-intro">Diseñado como un sistema distribuido escalable y determinista.</p>
+    
+    <div class="tech-grid">
+      <article>
+        <h3>Arquitectura Multihilo</h3>
+        <p>Modelo Cliente-Servidor con hilos dedicados para emisor, receptor y lógica de juego (GameLoop).</p>
+      </article>
+
+      <article>
+        <h3>Protocolo Binario Propietario</h3>
+        <p>Serialización estricta de bytes (std::vector&lt;uint8_t&gt;) para optimizar el ancho de banda y la latencia.</p>
+      </article>
+
+      <article>
+        <h3>Patrones de Diseño</h3>
+        <p>Uso de <strong>Factory Method</strong> y polimorfismo para instanciar comandos dinámicamente según el encabezado.</p>
+      </article>
+
+      <article>
+        <h3>Stack Tecnológico</h3>
+        <p>Desarrollado en C++ usando SDL2pp para el renderizado, Qt5 para la interfaz y Box2D para físicas.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="repository">
+    <h2>Código Fuente</h2>
+    <p>Explora la implementación completa, los diagramas de arquitectura y el historial de desarrollo en GitHub.</p>
+    <a href="https://github.com/maxivasil/TP_grupal_taller_G26" target="_blank" class="repo-button">
+        <img src="icons/github.svg" alt="GitHub">
+        Ver Repositorio Oficial
+    </a>
+  </section>
+
+  <section class="developers">
+    <h2>Desarrolladores</h2>
+    <div class="dev-list">
+        <div class="dev">
+            <span class="name">Ulises Valentín Tripaldi</span>
+            <div class="dev-links">
+                <a href="mailto:utripaldi@fi.uba.ar"><img src="icons/mail.svg" alt="Email"></a>
+                <a href="https://github.com/utripaldi" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            </div>
+        </div>
+        <div class="dev">
+            <span class="name">Máximo Augusto Calderón Vasil</span>
+            <div class="dev-links">
+                <a href="mailto:mcalderonv@fi.uba.ar"><img src="icons/mail.svg" alt="Email"></a>
+                <a href="https://github.com/maxivasil" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            </div>
+        </div>
+        <div class="dev">
+            <span class="name">Bautista Canepa</span>
+            <div class="dev-links">
+                <a href="mailto:bcanepa@fi.uba.ar"><img src="icons/mail.svg" alt="Email"></a>
+                <a href="https://github.com/ManteCvK" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            </div>
+        </div>
+        <div class="dev">
+            <span class="name">Maximo Giovanettoni</span>
+            <div class="dev-links">
+                <a href="mailto:mgiovanettoni@fi.uba.ar"><img src="icons/mail.svg" alt="Email"></a>
+                <a href="https://github.com/maximogiovanettoni" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            </div>
+        </div>
+    </div>
+  </section>
 
 </body>
 </html>
